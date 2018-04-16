@@ -1,0 +1,293 @@
+QFrame {
+    color: #000000;
+    background-color: #D8DFF7;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #DEF2FE;
+    padding: 3px;
+}
+
+QFrame#Options1 {
+    color: #000088;
+    background-color: #99C0EE;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #DEF2FE;
+    padding: 3px;
+}
+
+QFrame#Options2 {
+    color: #008800;
+    background-color: #99C0EE;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #DEF2FE;
+    padding: 3px;
+}
+
+QFrame#Options3 {
+    color: #880000;
+    background-color: #99C0EE;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #DEF2FE;
+    padding: 3px;
+}
+
+QLabel {
+    color: #000000;
+    background-color: #99C0EE;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #DEF2FE;
+    padding: 3px;
+}
+
+QPushButton {
+    color: black;
+    background-color: #64B5F6;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #607D8B;
+    padding: 3px;
+}
+
+QPushButton:pressed {
+    background-color: #B0BEC5;
+    border-style: inset;
+    border-color: black;
+}
+
+QPushButton:disabled {
+    background-color: #C5C5C5;
+    border-style: inset;
+    border-color: #B5B5B5;
+}
+
+QTreeWidget {
+    border: 1px solid gray;
+    border-radius: 3px;
+    background-color: #D9EEF8;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox {
+    border: 1px solid gray;
+    border-radius: 3px;
+    background-color: #E0E0E0;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: #E0E0E0;
+}
+
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow {
+    image: url(/Users/TylerDurden/Projects/sim/mdof_july/MDOF/down.png);
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}
+
+QComboBox QAbstractItemView {
+    border: 2px solid darkgray;
+    selection-background-color: blue;
+}
+
+QLineEdit {
+    background-color: #E0E0E0;
+    border-radius: 5px;
+}
+
+QSpinBox {
+    background-color: #E0E0E0;
+    border-radius: 5px;
+}
+
+QDoubleSpinBox {
+    background-color: #E0E0E0;
+    border-radius: 5px;
+}
+
+QTabBar::tab:disabled {
+     width: 100px;
+     color: transparent;
+     background: transparent;
+  }
+
+QWidget#parameterSpace {
+    background-color: white;
+}
+
+QToolBox::tab {
+   background-color: #B0BEC5;
+   border-style: outset;
+   border-width: 1px;
+   border-radius: 5px;
+   border-color: #607D8B;
+   color: #6495D6;
+   font: 16px slanted;
+}
+
+QToolBox::tab:selected {
+   background-color: #B0BEC5;
+   color: #6495D6;
+   font: 16px bold;
+}
+
+/*
+* ======= <HEADER AND FOOTER> =======
+*/
+
+HeaderWidget {
+    background-color: #B0BEC5;
+    height: 30px;
+    border-radius: 5px;
+}
+
+FooterWidget {
+    background-color: #B0BEC5;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+HeaderWidget > QLabel {
+    font: bold 15 px;
+    font-weight: bold;
+}
+
+FooterWidget > QLabel {
+    color: #000000;
+    font: bold 15 px;
+}
+
+/*
+* ======= <HEADER AND FOOTER> =======
+*/
+
+/*
+* ======= <SECTION LABEL STYLES> =======
+*/
+
+/*
+QLabel#sectionTitle {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QLabel#propertiesTitle {
+    font: bold 15 px;
+    font-weight: bold;
+}
+
+QLabel#vizTitle {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QLabel#outTitle {
+    font: bold 15 px;
+    font-weight: bold;
+}
+
+QLabel#inTitle {
+    font: bold 15 px;
+    font-weight: bold;
+}
+*/
+
+/*
+* ======= <SECTION LABEL STYLES> =======
+*/
+
+QScrollArea {
+   background: white;
+}
+
+/*
+QFrame#line {
+    background-color: #B0BEC5;
+    border:none;
+}
+
+QFrame#line2 {
+    background-color: #B0BEC5;
+    border:none;
+}
+
+QFrame#inputMotion {
+    background-color: #FFFFFF;
+    border:none;
+}
+
+
+QFrame#firstOutput {
+    background-color: #FFFFFF;
+    border:none;
+}
+
+QFrame#outputDataFrame {
+    background-color: #FFFFFF;
+    border:none;
+}
+
+QFrame#mainProperties {
+    background-color: #FFFFFF;
+    border:none;
+}
+
+QFrame#floorMassFrame {
+    background-color: #FFFFFF;
+    border:none;
+}
+
+QFrame#storyPropertiesFrame {
+    background-color: #FFFFFF;
+    border:none;
+}
+
+QFrame#outputDataFrame {
+    background-color: #FFFFFF;
+    border:none;
+}
+
+QFrame#pushButtons {
+    border:none;
+}
+*/
+
+QCommandLinkButton {
+    font-size: 14px;
+}
+
+QLineEdit#lineEdit_newCaseName {
+    background-color: #FFFFFF;
+}

@@ -6,6 +6,8 @@
 #if !defined(AFX_STDAFX_H__C280BBDC_7360_4663_B015_7C2BE32EF97A__INCLUDED_)
 #define AFX_STDAFX_H__C280BBDC_7360_4663_B015_7C2BE32EF97A__INCLUDED_
 
+#ifdef _MSC_VER
+
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
@@ -57,9 +59,12 @@ BOOL CheckVersion(CString & strVersion);
 //{{AFX_INSERT_LOCATION}}
 // Microsoft Visual C++ will insert additional declarations immediately before the previous line.
 
+#include <afxdlgs.h>
+#include "../QHTML_Static/QHTM/QHTM.h"
+
+#endif
+
 #include "resource.h"
 #include "commonresource.h"
-#include <afxdlgs.h>
-#include "..\QHTML_Static\QHTM\QHTM.h"
 
 #endif // !defined(AFX_STDAFX_H__C280BBDC_7360_4663_B015_7C2BE32EF97A__INCLUDED_)
