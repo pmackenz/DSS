@@ -318,3 +318,6 @@ ASALocalRun/
 
 # MSBuild Binary and Structured Log
 *.binlog
+*.stash
+*.o
+build-MacDSS-Desktop_Qt_5_10_0_clang_64bit-Debug/Makefile
