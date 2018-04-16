@@ -25,13 +25,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    stackingparameters.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    stackingparameters.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    stackingparameters.ui
 
 RESOURCES += \
     ../resources.qrc
